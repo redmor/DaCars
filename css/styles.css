@@ -1,4 +1,8 @@
 /* CSS Reset */
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,8 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
@@ -48,6 +50,7 @@ table {
 body{
   color: #fff;
   font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
 }
 
 .wrapper{
@@ -89,7 +92,7 @@ body{
 /* ============== MAIN ================= */
 /* ============== BANNER ================= */
 .banner{
-  height: 612px;
+  height: 840px;
   background-image: url(../img/banner.jpg);
   background-size: cover;
   padding-top: 230px;
@@ -116,9 +119,64 @@ body{
   padding: 20px 30px;
   color: inherit;
   text-transform: uppercase;
-  background: tomato;
+  background: #ffcc00;
   font-size: 14px;
   text-decoration: none;
   width: 166px;
   text-align: center;
+  border-radius: 50px 0;
+  text-shadow: 0px 1px 1px #000;
+}
+/* ============== ARTICLES ================= */
+
+.articles{
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(-20deg, #ffffff 0%, #ffffff 50%, #1b1b1b 50%, #1b1b1b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-20deg, #ffffff 0%,#ffffff 50%,#1b1b1b 50%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(95deg, #ffffff 0%,#ffffff 49.9%,#1b1b1b 50%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.articles>.wrapper::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+article{
+  width: 50%;
+  float: left;
+  padding-top: 60px;
+}
+
+article:first-of-type{
+  padding-right: 65px;
+  color: #000;
+}
+
+article:last-of-type{
+  padding-left: 65px;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: 300;
+}
+
+h2::after{
+  content: "";
+  display: block;
+  background-color: #ffcc00;
+  height: 2px;
+  width: 100px;
+  margin: 20px 0;
+}
+.quote{
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.text{
+  font-weight: 300;
+  margin-bottom: 60px;
 }
