@@ -26,6 +26,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
@@ -57,13 +59,16 @@ body{
 
 .page-header{
   height: 66px;
+  width: 100%;
   background: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .page-header .logo{
   float: left;
-  padding-top: 23px;
-  box-sizing: border-box;
+  padding-top: 5px;
 }
 
 .page-header .main-nav{
@@ -79,4 +84,41 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   line-height: 66px;
+}
+
+/* ============== MAIN ================= */
+/* ============== BANNER ================= */
+.banner{
+  height: 612px;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  padding-top: 230px;
+}
+
+.banner-block{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+ h1{
+   text-transform: uppercase;
+   margin: 25px 0;
+ }
+
+.subtitle{
+  font-size: 21px;
+  font-weight: 300;
+}
+.learn-more{
+  display: inline-block;
+  padding: 20px 30px;
+  color: inherit;
+  text-transform: uppercase;
+  background: tomato;
+  font-size: 14px;
+  text-decoration: none;
+  width: 166px;
+  text-align: center;
 }
