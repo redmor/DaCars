@@ -136,7 +136,8 @@ body{
   background: linear-gradient(95deg, #ffffff 0%,#ffffff 49.9%,#1b1b1b 50%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-.articles>.wrapper::after{
+.articles>.wrapper::after,
+.page-footer>.wrapper::after{
   content: "";
   display: table;
   clear: both;
@@ -179,4 +180,39 @@ h2::after{
 .text{
   font-weight: 300;
   margin-bottom: 60px;
+}
+
+/* ============== Footer ================= */
+
+.page-footer{
+  background-color: #111111;
+  padding: 25px;
+}
+.footer-col{
+  width: 25%;
+  float: left;
+}
+
+.page-footer h3{
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.page-footer li{
+  font-size: 13px;
+  color: #999;
+  line-height: 1.6;
+}
+
+h3::after{
+  content: "";
+  display: block;
+  background-color: #292929;
+  height: 2px;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.copy{
+  color: #585858;
 }
